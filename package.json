@@ -1,6 +1,7 @@
 {
   "name": "@hexlet/frontend-project-44",
   "version": "1.0.0",
+  "typpe":"module",
   "bin":{
     "brain-games": "./bin/brain-games.js"
   },
