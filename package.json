@@ -1,25 +1,34 @@
 {
   "name": "@hexlet/frontend-project-44",
-  "version": "1.0.0",
-  "typpe":"module",
-  "bin":{
+  "version": "1.2.0",
+  "type": "module",
+  "files": [
+    "bin/",
+    "src/"
+  ],
+  "bin": {
     "brain-games": "./bin/brain-games.js"
   },
   "description": "[![Actions Status](https://github.com/chudo932/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/chudo932/frontend-project-44/actions)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install:deps": "npm ci",
+    "start": "node bin/brain-games.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chudo932/frontend-project-44.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Pavel Ryabokon",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/chudo932/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/chudo932/frontend-project-44#readme"
+  "homepage": "https://github.com/chudo932/frontend-project-44#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
+
