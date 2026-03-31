@@ -14,7 +14,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "install:deps": "npm ci",
-    "start": "node bin/brain-games.js"
+    "start": "node bin/brain-games.js",
+    "lint": "npx eslint .",
+    "lint-fix": "npm run lint -- --fix"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,10 @@
   "homepage": "https://github.com/chudo932/frontend-project-44#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.1.0",
+    "globals": "^17.4.0"
   }
 }
-
