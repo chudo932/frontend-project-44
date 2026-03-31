@@ -7,14 +7,15 @@
     "src/"
   ],
   "bin": {
-    "brain-games": "./bin/brain-games.js"
+    "brain-games": "./bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "description": "[![Actions Status](https://github.com/chudo932/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/chudo932/frontend-project-44/actions)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "install:deps": "npm ci",
-    "start": "node bin/brain-games.js",
+    "start": "node bin/brain-even.js",
     "lint": "npx eslint .",
     "lint-fix": "npm run lint -- --fix"
   },
