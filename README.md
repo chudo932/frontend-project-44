@@ -20,3 +20,13 @@ npm install -g @hexlet/code
 2. В `package.json` добавлена запись `"brain-even": "bin/brain-even.js"`.
 3. После `npm link` команда `brain-even` запускается и работает корректно.
 4. В `README.md` есть чёткие инструкции по установке и запуску.
+
+## Brain Calc Game
+
+Математическая игра — вычислите результат выражения.
+
+### Запуск игры
+
+```bash
+brain-calc
+```
