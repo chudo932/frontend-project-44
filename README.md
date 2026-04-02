@@ -58,3 +58,8 @@ brain-progression
 ```bash
 npm run brain-prime
 ```
+
+**Неуниерсальны способ**
+```bash
+brain-prime
+```
