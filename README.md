@@ -54,12 +54,12 @@ brain-progression
 
 ### Запуск игры
 
+
+```bash
+brain-prime
+```
+
 **Универсальный способ (рекомендуется для всех ОС):**
 ```bash
 npm run brain-prime
-```
-
-**Неуниерсальны способ**
-```bash
-brain-prime
 ```
