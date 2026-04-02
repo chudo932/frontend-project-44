@@ -30,3 +30,12 @@ npm install -g @hexlet/code
 ```bash
 brain-calc
 ```
+## Brain GCD Game
+
+Игра на нахождение наибольшего общего делителя (НОД) двух чисел.
+
+### Запуск игры
+
+```bash
+brain-gcd
+```
