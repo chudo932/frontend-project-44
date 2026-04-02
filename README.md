@@ -39,3 +39,12 @@ brain-calc
 ```bash
 brain-gcd
 ```
+## Brain Progression
+
+Математическая игра: угадай пропущенное число в арифметической прогрессии.
+
+### Запуск игры
+
+```bash
+brain-progression
+```

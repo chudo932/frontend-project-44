@@ -10,7 +10,8 @@
     "brain-games": "./bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js",
-    "brain-gcd": "bin/brain-gcd.js"
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progression": "bin/brain-progression.js"
   },
   "description": "[![Actions Status](https://github.com/chudo932/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/chudo932/frontend-project-44/actions)",
   "main": "index.js",
@@ -21,7 +22,8 @@
     "lint": "npx eslint .",
     "lint-fix": "npm run lint -- --fix",
     "start-calc": "node bin/brain-calc.js",
-    "start-gcd": "node bin/brain-gcd.js"
+    "start-gcd": "node bin/brain-gcd.js",
+    "start-progression": "node bin/brain-progression.js"
   },
   "repository": {
     "type": "git",
