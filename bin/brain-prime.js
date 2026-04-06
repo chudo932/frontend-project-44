@@ -29,7 +29,7 @@ const generateQuestion = () => {
 
 const playGame = () => {
   console.log('Welcome to the Brain Games!');
-  console.log('Answer "yes" if number is prime, otherwise answer "no".');
+  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   console.log();
 
   rl.question('May I have your name? ', (userName) => {
@@ -46,7 +46,6 @@ const playGame = () => {
       }
 
       const { number, correctAnswer } = generateQuestion();
-
       console.log(`Question: ${number}`);
 
       rl.question('Your answer: ', (userAnswer) => {
