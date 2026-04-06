@@ -1,70 +1,70 @@
 #!/usr/bin/env node
 
-import readline from 'readline';
-import { randomInt } from 'crypto';
+import readline from 'readline'
+import { randomInt } from 'crypto'
 
 const rl = readline.createInterface({
   input: process.stdin,
-  output: process.stdout
-});
+  output: process.stdout,
+})
 
-const MAX_ROUNDS = 3;
+const MAX_ROUNDS = 3
 
 const isPrime = (num) => {
-  if (num < 2) return false;
-  if (num === 2) return true;
-  if (num % 2 === 0) return false;
+  if (num < 2) return false
+  if (num === 2) return true
+  if (num % 2 === 0) return false
 
   for (let i = 3; i <= Math.sqrt(num); i += 2) {
-    if (num % i === 0) return false;
+    if (num % i === 0) return false
   }
-  return true;
-};
+  return true
+}
 
 const generateQuestion = () => {
-  const number = randomInt(2, 100);
-  const correctAnswer = isPrime(number) ? 'yes' : 'no';
-  return { number, correctAnswer };
-};
+  const number = randomInt(2, 100)
+  const correctAnswer = isPrime(number) ? 'yes' : 'no'
+  return { number, correctAnswer }
+}
 
 const playGame = () => {
-  console.log('Welcome to the Brain Games!');
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-  console.log();
+  console.log('Welcome to the Brain Games!')
+  console.log('Answer "yes" if given number is prime. Otherwise answer "no".')
+  console.log()
 
   rl.question('May I have your name? ', (userName) => {
-    console.log(`Hello, ${userName}!`);
-    console.log();
+    console.log(`Hello, ${userName}!`)
+    console.log()
 
-    let round = 0;
+    let round = 0
 
     const playRound = () => {
       if (round >= MAX_ROUNDS) {
-        console.log(`Congratulations, ${userName}!`);
-        rl.close();
-        return;
+        console.log(`Congratulations, ${userName}!`)
+        rl.close()
+        return
       }
 
-      const { number, correctAnswer } = generateQuestion();
-      console.log(`Question: ${number}`);
+      const { number, correctAnswer } = generateQuestion()
+      console.log(`Question: ${number}`)
 
       rl.question('Your answer: ', (userAnswer) => {
-        const normalizedUserAnswer = userAnswer.trim().toLowerCase();
+        const normalizedUserAnswer = userAnswer.trim().toLowerCase()
 
         if (normalizedUserAnswer === correctAnswer) {
-          console.log('Correct!');
-          round++;
-          playRound();
+          console.log('Correct!')
+          round++
+          playRound()
         } else {
-          console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-          console.log(`Let's try again, ${userName}!`);
-          rl.close();
+          console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
+          console.log(`Let's try again, ${userName}!`)
+          rl.close()
         }
-      });
-    };
+      })
+    }
 
-    playRound();
-  });
-};
+    playRound()
+  })
+}
 
-playGame();
+playGame()

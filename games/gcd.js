@@ -1,25 +1,25 @@
 const getRandomInt = (min, max) =>
-  Math.floor(Math.random() * (max - min + 1)) + min;
+  Math.floor(Math.random() * (max - min + 1)) + min
 
 const findGCD = (a, b) => {
   while (b !== 0) {
-    const temp = b;
-    b = a % b;
-    a = temp;
+    const temp = b
+    b = a % b
+    a = temp
   }
-  return a;
-};
+  return a
+}
 
 const generateRound = () => {
-  const num1 = getRandomInt(1, 50);
-  const num2 = getRandomInt(1, 50);
+  const num1 = getRandomInt(1, 50)
+  const num2 = getRandomInt(1, 50)
 
-  const question = `${num1} ${num2}`;
-  const correctAnswer = String(findGCD(num1, num2));
+  const question = `${num1} ${num2}`
+  const correctAnswer = String(findGCD(num1, num2))
 
-  return { question, correctAnswer };
-};
+  return { question, correctAnswer }
+}
 
-const getDescription = () => 'Find the greatest common divisor of given numbers.';
+const getDescription = () => 'Find the greatest common divisor of given numbers.'
 
-export default { getDescription, generateRound };
+export default { getDescription, generateRound }
