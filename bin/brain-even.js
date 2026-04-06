@@ -15,7 +15,8 @@ function playRound() {
   if (userAnswer.toLowerCase() === correctAnswer) {
     console.log('Correct!')
     return true
-  } else {
+  } 
+  else {
     console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
     return false
   }
