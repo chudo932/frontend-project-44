@@ -16,13 +16,13 @@ export default defineConfig([
       }
     },
     rules: {
-      semi: ["error", "never"],
-      quotes: ["error", "single", { avoidEscape: true }],
-      "eol-last": ["error", "always"],
-      "comma-dangle": ["error", "always-multiline"],
-      "brace-style": ["error", "1tbs", { allowSingleLine: true }],
-      "no-trailing-spaces": "error",
-      "no-multiple-empty-lines": ["error", { max: 1, maxEOF: 0 }]
+      semi: ['error', 'never'],
+      quotes: ['error', 'single', { avoidEscape: true }],
+      'eol-last': ['error', 'always'],
+      'comma-dangle': ['error', 'always-multiline'],
+      'brace-style': ['error', '1tbs', { allowSingleLine: true }],
+      'no-trailing-spaces': 'error',
+      'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0 }]
     }
   }
 ]);
