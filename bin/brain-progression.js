@@ -21,21 +21,28 @@ const hideElement = (progression, index) => {
 };
 
 const playGame = () => {
+  console.log('Welcome to the Brain Games!');
   console.log('What number is missing in the progression?');
+  console.log();
 
-  const progression = generateProgression();
-  const hiddenIndex = randomInt(0, progression.length);
-  const correctAnswer = progression[hiddenIndex];
-  const question = hideElement(progression, hiddenIndex);
+  rl.question('May I have your name? ', (userName) => {
+    console.log(`Hello, ${userName}!`);
+    console.log();
 
-  rl.question(`Question: ${question}\nYour answer: `, (userAnswer) => {
-    if (parseInt(userAnswer, 10) === correctAnswer) {
-      console.log('Correct!');
+    const progression = generateProgression();
+    const hiddenIndex = randomInt(0, progression.length);
+    const correctAnswer = progression[hiddenIndex];
+    const question = hideElement(progression, hiddenIndex);
+
+    rl.question(`Question: ${question}\nYour answer: `, (userAnswer) => {
+      if (parseInt(userAnswer, 10) === correctAnswer) {
+        console.log('Correct!');
+      } else {
+        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+        console.log(`Let's try again, ${userName}!`);
+      }
       rl.close();
-    } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      rl.close();
-    }
+    });
   });
 };
 

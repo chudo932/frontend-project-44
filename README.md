@@ -44,7 +44,7 @@ brain-gcd
 ```
 ### Работа игры
 ![Correct](image-3.png)
-![Dont-correct](image-2.png)
+![Dont-correct](image-8.png)
 
 ## Brain Progression
 
@@ -56,8 +56,8 @@ brain-gcd
 brain-progression
 ```
 ### Работа игры
-![Correct](image-4.png)
-![Dont-correct](image-5.png)
+![Correct](image-10.png)
+![Dont-correct](image-11.png)
 
 ## Brain Prime
 
@@ -70,8 +70,8 @@ brain-progression
 brain-prime
 ```
 ### Работа игры
-![Correct](image-6.png)
-![Dont-correct](image-7.png)
+![Correct](image-12.png)
+![Dont-correct](image-13.png)
 
 **Универсальный способ (рекомендуется для всех ОС):**
 ```bash
