@@ -1,28 +1,25 @@
-import js from "@eslint/js";
-import globals from "globals";
-import { defineConfig } from "eslint/config";
+import globals from 'globals'
+import stylistic from '@stylistic/eslint-plugin'
 
-export default defineConfig([
+export default [
   {
-    files: ["**/*.{js,mjs,cjs}"],
-    plugins: { js },
-    extends: ["js/recommended"],
+    files: ['**/*.js'],
     languageOptions: {
-      ecmaVersion: "latest",
-      sourceType: "module",
+      sourceType: 'module',
       globals: {
-        ...globals.browser,
-        ...globals.node
-      }
+        ...globals.node,
+      },
+    },
+    plugins: {
+      '@stylistic': stylistic,
     },
     rules: {
-      'semi': ['error', 'never'],
-      'quotes': ['error', 'single', { avoidEscape: true }],
-      'eol-last': ['error', 'always'],
-      'comma-dangle': ['error', 'always-multiline'],
-      'brace-style': ['error', '1tbs', { allowSingleLine: true }],
-      'no-trailing-spaces': 'error',
-      'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0 }]
-    }
-  }
-]);
+      '@stylistic/indent': ['error', 2],
+      '@stylistic/quotes': ['error', 'single'],
+      '@stylistic/semi': ['error', 'never'],
+      '@stylistic/no-trailing-spaces': 'error',
+      '@stylistic/eol-last': 'error',
+      '@stylistic/object-curly-spacing': ['error', 'always'],
+    },
+  },
+]
