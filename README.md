@@ -30,6 +30,7 @@ npm install -g @hexlet/code
 ```bash
 brain-calc
 ```
+### Работа игры
 ![Correct](image.png)
 ![Dont-correct](image-1.png)
 ## Brain GCD Game
@@ -41,6 +42,7 @@ brain-calc
 ```bash
 brain-gcd
 ```
+### Работа игры
 ![Correct](image-3.png)
 ![Dont-correct](image-2.png)
 
@@ -53,6 +55,7 @@ brain-gcd
 ```bash
 brain-progression
 ```
+### Работа игры
 ![Correct](image-4.png)
 ![Dont-correct](image-5.png)
 
@@ -66,6 +69,7 @@ brain-progression
 ```bash
 brain-prime
 ```
+### Работа игры
 ![Correct](image-6.png)
 ![Dont-correct](image-7.png)
 
