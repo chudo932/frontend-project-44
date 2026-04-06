@@ -44,7 +44,7 @@ brain-gcd
 ```
 ### Работа игры
 ![Correct](image-3.png)
-![Dont-correct](image-8.png)
+![Dont-correct](image-14.png)
 
 ## Brain Progression
 

@@ -28,11 +28,11 @@ const generateQuestion = () => {
 const playGame = () => {
   console.log('Welcome to the Brain Games!');
   console.log('Answer "yes" if number is prime, otherwise answer "no".');
-  console.log(); // Пустая строка для разделения
+  console.log(); 
 
   rl.question('May I have your name? ', (userName) => {
     console.log(`Hello, ${userName}!`);
-    console.log(); // Пустая строка для разделения
+    console.log(); 
 
     const { number, correctAnswer } = generateQuestion();
 
