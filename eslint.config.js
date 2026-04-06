@@ -16,8 +16,8 @@ export default defineConfig([
       }
     },
     rules: {
-      semi: ['error', 'never'],
-      quotes: ['error', 'single', { avoidEscape: true }],
+      'semi': ['error', 'never'],
+      'quotes': ['error', 'single', { avoidEscape: true }],
       'eol-last': ['error', 'always'],
       'comma-dangle': ['error', 'always-multiline'],
       'brace-style': ['error', '1tbs', { allowSingleLine: true }],
