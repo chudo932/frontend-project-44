@@ -30,6 +30,8 @@ npm install -g @hexlet/code
 ```bash
 brain-calc
 ```
+![Correct](image.png)
+![Dont-correct](image-1.png)
 ## Brain GCD Game
 
 Игра на нахождение наибольшего общего делителя (НОД) двух чисел.
@@ -39,6 +41,9 @@ brain-calc
 ```bash
 brain-gcd
 ```
+![Correct](image-3.png)
+![Dont-correct](image-2.png)
+
 ## Brain Progression
 
 Математическая игра: угадай пропущенное число в арифметической прогрессии.
@@ -48,6 +53,9 @@ brain-gcd
 ```bash
 brain-progression
 ```
+![Correct](image-4.png)
+![Dont-correct](image-5.png)
+
 ## Brain Prime
 
 Игра на проверку простых чисел: ответьте «yes», если число простое, и «no», если составное.
@@ -58,6 +66,8 @@ brain-progression
 ```bash
 brain-prime
 ```
+![Correct](image-6.png)
+![Dont-correct](image-7.png)
 
 **Универсальный способ (рекомендуется для всех ОС):**
 ```bash
