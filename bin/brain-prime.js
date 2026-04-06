@@ -8,6 +8,8 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
+const MAX_ROUNDS = 3;
+
 const isPrime = (num) => {
   if (num < 2) return false;
   if (num === 2) return true;
@@ -28,25 +30,41 @@ const generateQuestion = () => {
 const playGame = () => {
   console.log('Welcome to the Brain Games!');
   console.log('Answer "yes" if number is prime, otherwise answer "no".');
-  console.log(); 
+  console.log();
 
   rl.question('May I have your name? ', (userName) => {
     console.log(`Hello, ${userName}!`);
-    console.log(); 
+    console.log();
 
-    const { number, correctAnswer } = generateQuestion();
+    let round = 0;
 
-    rl.question(`Question: ${number}\nYour answer: `, (userAnswer) => {
-      const normalizedUserAnswer = userAnswer.trim().toLowerCase();
-
-      if (normalizedUserAnswer === correctAnswer) {
-        console.log('Correct!');
-      } else {
-        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-        console.log(`Let's try again, ${userName}!`);
+    const playRound = () => {
+      if (round >= MAX_ROUNDS) {
+        console.log(`Congratulations, ${userName}!`);
+        rl.close();
+        return;
       }
-      rl.close();
-    });
+
+      const { number, correctAnswer } = generateQuestion();
+
+      console.log(`Question: ${number}`);
+
+      rl.question('Your answer: ', (userAnswer) => {
+        const normalizedUserAnswer = userAnswer.trim().toLowerCase();
+
+        if (normalizedUserAnswer === correctAnswer) {
+          console.log('Correct!');
+          round++;
+          playRound();
+        } else {
+          console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+          console.log(`Let's try again, ${userName}!`);
+          rl.close();
+        }
+      });
+    };
+
+    playRound();
   });
 };
 
